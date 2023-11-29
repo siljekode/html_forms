@@ -1,91 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First HTML Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
 
-<body>
-  <form action="#" method="post" id="sign-up" >
-  <fieldset>
-  <legend>Forms 101</legend>
+  <body>
+    <form action="#" method="post" id="sign-up">
+      <fieldset>
+        <legend>Forms 101</legend>
 
-   <div class="first-form">
-    <div class="form-group">
-     <label for="f-name">First Name*</label><br>
-     <input required id="text" text="f-name" name="name" placeholder="First name" minlength="2"><br />
-     <label for="l-name">Last Name*</label><br>
-     <input required id="text" text="l-name" name="name" placeholder="Last name" minlength="2"><br >
-    </div>
-   </div>   
+        <div class="first-form">
+          <div class="form-group">
+            <label for="f-name">First Name*</label><br />
+            <input required id="text" text="f-name"name="name"placeholder="First name" minlength="2"/><br />
+            <label for="l-name">Last Name*</label><br />
+            <input required id="text" text="l-name" name="name" placeholder="Last name" minlength="2"/><br />
+          </div>
+        </div>
 
-  <div>
-   <select name="pronoun" id="pronoun">
-    <option value="select pronoun">Select pronoun</option>
-    <option value="he">He</option>
-    <option value="she">She</option>
-    <option value="they">They</option>
-    <option value="other">Other</option>
-   </select>
-  </div>
-            
-  <div>
-   <label for="email" name="email">E-mail*</label><br>
-   <input required type="email" name="email" id="email"><br />
-   <datalist id="default-email">
-    <option value="siljekodehode@gmail.com"></option>
-  </datalist>
-  </div>
+        <div>
+          <select name="pronoun" id="pronoun">
+            <option value="select pronoun">Select pronoun</option>
+            <option value="he">He</option>
+            <option value="she">She</option>
+            <option value="they">They</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-  <div>
-   <label for="tel">Phone number</label><br>
-   <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123 45 678"><br />
-  </div>
-  
-<!-- Date format selected by reading settings on your device, so for me it's mm.dd.yyyy for some reason -->
-  <div> 
-   <input type="date" name="date"><br>
-   <label for="date">Date of birth</label><br />
-  </div>
+        <div>
+          <label for="email" name="email">E-mail*</label><br />
+          <input required type="email" name="email" id="email" /><br />
+          <datalist id="default-email">
+            <option value="siljekodehode@gmail.com"></option>
+          </datalist>
+        </div>
 
-  <div>
-   <label for="color">Choose your favourite colour</label><br>
-   <input type="color"><br />
-  </div>
+        <div>
+          <label for="tel">Phone number</label><br />
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  placeholder="123 45 678"/><br />
+        </div>
 
-  <div>
-   <label for="file">Upload profile picture</label><br>
-   <input type="file" name="file" id="file"><br /> 
-  </div>
+        <!-- Date format selected by reading settings on your device, so for me it's mm.dd.yyyy for some reason -->
+        <div>
+          <input type="date" name="date"/><br />
+          <label for="date">Date of birth</label><br />
+        </div>
 
-  <div class="second-form"> 
-   <input required id="username" name="username" id="username" placeholder="Enter username">
-   <input required type="password" name="password" id="password" placeholder="Enter password">
-  </div>
+        <div>
+          <label for="color">Choose your favourite colour</label><br />
+          <input type="color"/><br />
+        </div>
 
-  <div>
-   <input type="radio" id="norwegian" name="contact-language" value="Norwegian">
-   <label for="norwegian">Norwegian</label><br />
-   <input type="radio" id="english" name="contact-language" value="English">
-   <label for="english">English</label><br />
-  </div>
+        <div>
+          <label for="file">Upload profile picture</label><br />
+          <input type="file" name="file" id="file"/><br />
+        </div>
 
-  <div id="checkbox">
-   <input type="checkbox" name="terms" required id="terms">
-   <label for="terms">I Accept the Terms and Conditions*</label>
-  </div>
+        <div class="second-form">
+          <input required id="username" name="username" id="username" 
+          placeholder="Enter username"/>
+          <input required type="password" name="password" id="password" placeholder="Enter password"/>
+        </div>
 
-  <div id="checkbox">
-   <input type="checkbox" name="newsletter">
-   <label for="newsletter">Yes, I wish to sign up for the newsletter</label>
-  </div>
+        <div>
+          <input type="radio" id="norwegian" name="contact-language" value="Norwegian"/>
+          <label for="norwegian">Norwegian</label><br />
+          <input type="radio" id="english" name="contact-language" value="English"/>
+          <label for="english">English</label><br />
+        </div>
 
-  <button class="button" type="submit">Submit Form</button>
-  <input type="reset">
-  
-  </fieldset>
-  </form>
-</body>
+        <div id="checkbox">
+          <input type="checkbox" name="terms" required id="terms"/>
+          <label for="terms">I Accept the Terms and Conditions*</label>
+        </div>
+
+        <div id="checkbox">
+          <input type="checkbox" name="newsletter"/>
+          <label for="newsletter"
+            >Yes, I wish to sign up for the newsletter</label>
+        </div>
+
+        <button class="button" type="submit">Submit Form</button>
+        <input type="reset"/>
+      </fieldset>
+    </form>
+  </body>
 </html>
